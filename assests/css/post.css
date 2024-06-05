@@ -1,0 +1,42 @@
+/* project page */
+.projectBody{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 3rem;
+    justify-content: center;
+    font-size: 1.5rem
+}
+.projectBody img{
+    height: fit-content;
+    width: 70%;
+}
+.projectBody p{
+    width: 70%;
+    color: #2d2a2a;
+}
+.projectBody a{
+    color: red;
+    text-decoration: underline;
+}
+
+.bothBtns{
+    display: flex;
+    justify-content: space-between;
+}
+.bothBtns .nextbtn{
+    background-color: #1142e6;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    margin: 1rem;
+}
+.bothBtns .backbtn{
+    background-color: #232323;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    margin: 1rem;
+}

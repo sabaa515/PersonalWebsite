@@ -1,0 +1,14 @@
+/* contact me */
+footer{
+    box-shadow: inset 0px 8px 15px rgb(211, 206, 206);
+    height: 15vh;
+    font-weight: 500;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 1rem;
+}
+footer .SocialMedia a img{
+    height: 7vh;
+}

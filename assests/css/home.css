@@ -1,0 +1,269 @@
+/* header */
+.header {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 4rem;
+
+}
+
+.header .specialization {
+    margin-top: 1rem;
+    position: relative;
+    width: 17vw;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.header .specialization::before {
+    content: " ";
+    width: 35%;
+    height: 2px;
+    border-radius: 0.5rem;
+    background-color: rgb(211, 205, 205);
+    position: absolute;
+    top: 60%;
+    left: 0%;
+}
+
+.header img {
+    width: 30%;
+    height: fit-content;
+}
+/* about me */
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    color: rgba(211, 205, 205, 0.815);
+    background-image: linear-gradient(30deg, #060606, #2d2a2a);
+}
+
+.aboutMe h2 {
+    margin-right: 3rem;
+    position: relative;
+}
+
+.aboutMe h2::after {
+    content: "";
+    width: 30%;
+    height: 0.5vh;
+    border-radius: 1rem;
+    background-color: #fd2945;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+}
+
+.aboutMe p {
+    width: 30%;
+    line-height: 2rem;
+}
+
+/* soft skills */
+.softSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 70vh;
+    grid-gap: 1rem;
+}
+
+.softSkills h2 {
+    font-size: 2rem;
+}
+
+.softSkills .skills {
+    margin-left: 1rem;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3rem;
+}
+
+.softSkills .skills .skill {
+    background-color: #edc5c5;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 10px 10px 5px #80808026;
+    color: #fff;
+    text-align: center;
+
+}
+
+/* Technical skills */
+.technicalSkills {
+    background-color: #fff;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.technicalSkills h2 {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+}
+
+.technicalSkills .skills {
+    height: 40vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.technicalSkills .skills .skill img {
+    height: 80%;
+}
+
+.technicalSkills .skills .skill {
+    border-radius: 50%;
+    padding: 4px;
+    width: 30%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-self: center;
+}
+
+.technicalSkills .skills .skill:nth-child(1) {
+    background-image: linear-gradient(130deg, #1142e6, #6d9aef);
+
+}
+
+.technicalSkills .skills .skill:nth-child(2) {
+    background-color: #fff;
+
+}
+
+.technicalSkills .skills .skill:nth-child(3) {
+    background-image: linear-gradient(130deg, #ec5b2b, #ea9175);
+
+}
+
+.technicalSkills .skills .skill:nth-child(4) {
+    background-image: linear-gradient(130deg, #2652e7, #89adef);
+}
+
+.technicalSkills .skills .skill:nth-child(5) {
+    background-color: #fff;
+
+}
+
+.technicalSkills .skills .skill:nth-child(6) {
+    background-color: #ffda3e;
+    background-image: linear-gradient(130deg, #efd02f, #e9d982);
+
+
+}
+
+.technicalSkills .skills .skill:nth-child(7) {
+    background-color: #fff;
+
+}
+
+.technicalSkills .skills .skill:nth-child(8) {
+    background-color: #fff;
+    padding: 0;
+    outline: #000 solid 12px;
+    outline-offset: -15px;
+
+}
+
+/* projects */
+.projectsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    height: fit-content;
+    padding-bottom: 3rem;
+}
+
+.projectsSection h2 {
+    color: rgba(211, 205, 205, 0.815);
+    text-align: start;
+    width: 90%;
+    margin-block: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.projectsSection h2::before {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 0.5vh;
+    border-radius: 1rem;
+    background-color: #fd2945;
+    top: 100%;
+    left: 0%;
+}
+
+.projectsSection .projects {
+    height: 100vh;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3rem;
+}
+
+.projectsSection .projects .project {
+    width: 100%;
+    background-color: #141313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.projectsSection .projects .project figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.projectsSection .projects .project figure img {
+    width: 80%;
+    height: fit-content;
+    box-shadow: 1px 3px 20px 8px rgb(0, 0, 0);
+}
+
+.projectsSection .projects .project h3 {
+    color: #fff;
+    
+}
+
+.projectsSection .projects .project a {
+    color: #fd2945;
+    margin-bottom: 2rem;
+}
+.projectsSection .projects .project figcaption {
+    color: #fff;
+    margin-top: 1.5rem;
+}

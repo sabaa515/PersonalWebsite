@@ -1,0 +1,236 @@
+/* media query */
+
+@media (max-width: 1200px) {
+
+    /* header */
+    .header {
+        height: 50vh;
+    }
+
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .header .specialization {
+        width: 25vw;
+    }
+
+    .header .specialization::before {
+        width: 40%;
+    }
+
+    /* about me */
+    .aboutMe p {
+        width: 43%;
+    }
+
+    /* Technical skills */
+    .technicalSkills .skills .skill img {
+        height: 70%;
+    }
+
+    .technicalSkills .skills .skill {
+        height: 47%;
+    }
+
+    .technicalSkills .skills .skill:nth-child(8) {
+        outline: #000 solid 11px;
+        outline-offset: -12px;
+
+    }
+
+    /* projects */
+    .projectsSection .projects {
+        height: fit-content;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .projectsSection .projects .project {
+
+        height: 50vh;
+    }
+
+    .projectsSection .projects .project a {
+
+        margin-bottom: 4rem;
+    }
+
+    /* Project page */
+    .projectBody {
+        height: 100vh;
+        font-size: 1rem
+    }
+
+
+}
+
+@media (max-width: 992px) {
+
+    /* header */
+    .header .specialization {
+        width: 30vw;
+    }
+
+    .header .specialization::before {
+        width: 30%;
+    }
+
+    /* technical skills */
+    .technicalSkills .skills .skill {
+        width: 35%;
+        height: 45%;
+    }
+
+    .technicalSkills .skills .skill:nth-child(8) {
+        outline: #000 solid 10px;
+        outline-offset: -12px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* nav */
+    nav {
+        justify-content: space-around;
+        font-weight: 500;
+    }
+
+    nav h1 {
+        font-size: 1.1rem;
+    }
+
+    nav .list {
+        width: 70%;
+    }
+
+    nav .list ul {
+        font-size: 1rem;
+    }
+
+    /* header */
+    .header {
+        height: 50vh;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+
+    }
+
+    .header .specialization {
+        width: 41vw;
+    }
+
+    .header .specialization::before {
+        width: 40%;
+    }
+
+    /* about me */
+    .aboutMe p {
+        width: 61%;
+    }
+
+    /* technical skills */
+    .technicalSkills .skills .skill {
+        width: 40%;
+        height: 40%;
+    }
+
+    .technicalSkills .skills .skill:nth-child(8) {
+        outline: #000 solid 10px;
+        outline-offset: -11px;
+
+    }
+
+    /* projects */
+    .projectsSection .projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    /* contact me */
+    .contactMe {
+        font-size: 1rem;
+    }
+
+    /* Project page */
+    .projectBody {
+        height: 70vh;
+    }
+
+
+    .projectsSection .projects .project a {
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    /* nav */
+    nav h1 {
+        font-size: 1rem;
+    }
+
+    nav .list ul {
+        font-size: 0.9rem;
+    }
+
+    /* header */
+    .header {
+        height: 40vh;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .header .specialization {
+        width: 41vw;
+    }
+
+    .header .specialization::before {
+        width: 30%;
+    }
+
+    /* about me */
+    .aboutMe p {
+        width: 52%;
+    }
+
+    /* soft skills */
+    .softSkills h2 {
+        font-size: 1.8rem;
+    }
+
+    .softSkills .skills {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    /* technical skills */
+    .technicalSkills .skills .skill {
+        width: 50%;
+        height: 40%;
+    }
+
+    .technicalSkills .skills .skill:nth-child(8) {
+        outline-offset: -10px;
+
+    }
+
+    /* projects */
+    .projectsSection .projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .projectsSection .projects .project a {
+        margin-bottom: 2rem;
+    }
+
+
+}

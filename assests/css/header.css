@@ -1,0 +1,48 @@
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    font-weight: 600;
+    box-shadow: 10px 2px 15px rgb(211, 206, 206);
+}
+
+nav h1 {
+    font-size: 1.2rem;
+}
+
+nav .list {
+    width: 50%;
+}
+
+nav .list ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+    position: relative;
+
+}
+
+nav .list ul li:hover::before {
+    width: 100%;
+}
+
+nav .list ul li::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    border-radius: 1rem;
+    background-color: red;
+    position: absolute;
+    top: 100%;
+    transition: width linear 0.2s;
+}
